@@ -1,0 +1,28 @@
+{
+  "name": "project10_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.8.11",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.0.2",
+    "nodemailer": "^6.6.3",
+    "path": "^0.12.7"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,149 @@
+//bunaqa documentationni o'zim o'ylab topdim!
+
+apis:{
+    post$ /counter:{
+        /sendIp: {
+             ip: Strig
+        }
+
+    }
+    /files:{
+        post$ /upload:{
+             file: File
+        }
+        get$ /image/:name{
+
+        }
+
+        post$ /del/:name{
+
+        }
+    }
+    /about:{
+        get$ /getAll:{
+
+        }
+        post$ /add:{
+             title: req.body.title,
+             imgSrc: req.body.imgSrc,
+             body: req.body.body,
+        }
+
+        post$ /update:{
+             title: req.body.title,
+             imgSrc: req.body.imgSrc,
+             body: req.body.body,
+        }
+    }
+    /skills:{
+        get$ /getAll:{
+
+        }
+        post$ /add:{
+             name: req.body.name,
+             precent: req.body.precent
+        }
+
+        post$ /update/:id{
+             name: req.body.name,
+             precent: req.body.precent
+        }
+
+        post$ /delete/:id{
+
+        }
+    }
+    /portfolio:{
+        get$ /getAll:{
+
+        }
+        post$ /add:{
+             type: req.body.type,
+             title: req.body.title,
+             subtitle: req.body.subtitle,
+             url: req.body.url,
+             imgUrl: req.body.imgUrl
+        }
+
+        post$ /update/:id{
+             type: req.body.type,
+             title: req.body.title,
+             subtitle: req.body.subtitle,
+             url: req.body.url,
+             imgUrl: req.body.imgUrl
+        }
+
+        post$ /delete/:id{
+
+        }
+
+    }
+    /portfolio/type:{
+        get$ /getAll:{
+
+        }
+        post$ /add:{
+             name: req.body.name
+        }
+
+        post$ /update/:id{
+             name: req.body.name
+        }
+
+        post$ /delete/:id{
+
+        }
+
+    }
+    /contact:{
+        get$ /getAll:{
+
+        }
+        post$ /add:{
+             locate: req.body.locate,
+             phone: req.body.phone,
+             email: req.body.email
+        }
+
+        post$ /update/:id{
+             locate: req.body.locate,
+             phone: req.body.phone,
+             email: req.body.email
+        }
+
+        post$ /delete/:id{
+
+        }
+
+    }
+    /social:{
+        get$ /getAll:{
+
+        }
+        post$ /add:{
+             all: Massiv
+        }
+
+        post$ /update/:id{
+             all: Massiv
+        }
+
+        post$ /delete/:id{
+
+        }
+
+    }
+    /user:{
+        $post$ /add {
+             username: req.body.username,
+             password: req.body.password,
+             isAdmin: req.body.isAdmin
+        }
+
+        post$ /login {
+             username: req.body.username,
+             password: req.body.password,
+        }
+
+    }
+}

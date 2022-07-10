@@ -1,0 +1,4 @@
+{
+    "host": "https://portfolio-hamidullo.herokuapp.com",
+    "comment": "If you are using localhost without backend you shuld put to host : http://localhost:3000"
+}
